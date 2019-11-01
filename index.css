@@ -1,0 +1,20 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    margin: 0;
+    background: cover;
+    background-image: url("http://hdwallsbox.com/wallpapers/l/1920x1080/11/marvel-comics-the-avengers-hawkeye-blue-background-1920x1080-10553.jpg");
+}
+
+header {
+    margin-top: 25px;
+    height: 80px;
+    color: black;
+    margin-bottom: 55px;
+}
+
+header h1 {
+    top: 24px;
+    font-size: 30px;
+    font-weight: bold;
+}
