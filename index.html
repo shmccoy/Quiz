@@ -9,27 +9,36 @@
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+    <link href="box.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
 
 <header>
-    <section>
-        <h1>Marvel Cinematic Universe Quiz</h1>
-        <div class="question-and-score"></div>
+    <section class="row">
+        <div class="grid">
+            <h1>Marvel Cinematic Universe Quiz</h1>
+            <div class="question-and-score"></div>
+        </div>
     </section>
 </header>
 
 <body>
     <main role="main">
         <fieldset>
-            <section>
-                <p>How much do you know about the MCU?!</p>
+            <section class="row">
+                <div class="grid">
+                    <p>How much do you know about the MCU?!</p>
             </section>
-            <section>
-                <button type="button" id="start"> Start Quiz</button>
+            <section class="row">
+                <div class="grid">
+                    <button type="button" id="start"> Start Quiz</button>
+                </div>
             </section>
         </fieldset>
     </main>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="store.js"></script>
+<script src="index.js"></script>
 
 </html>
