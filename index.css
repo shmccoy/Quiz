@@ -60,15 +60,18 @@ button {
     padding: 10px 20px;
 }
 
-fieldset {
-    width: 55%;
-    padding: 40px;
+.box {
+    width: 90%;
+    padding: 20px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 800px;
 }
 
-fieldset p {
+.box p {
     font-size: 20px;
 }
 
@@ -128,4 +131,18 @@ button:focus:enabled {
 
 button:disabled {
     opacity: 0.5;
+}
+
+@media screen and (min-width: 400px) {
+    .box {
+        width: 70%;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .box {
+        width: 55%;
+        margin-top: 20px;
+    }
 }

@@ -32,7 +32,7 @@ function renderAQuestion() {
     let question = STORE.questions[STORE.currentQuestion];
     updateQuestionAndScore();
     const questionHtml = $(`
-    <div>
+    <div class="box">
       <form id="js-questions" class="question-form">
         
         <fieldset>
@@ -103,7 +103,7 @@ function handleSelectOption() {
         let currentQues = STORE.questions[STORE.currentQuestion];
         let selectedOption = $("input[name=options]:checked").val();
         if (!selectedOption) {
-            alert("Choose an option");
+            $("legend").append("Choose an option".fontcolor("red"));
             return;
         }
         let id_num = currentQues.options.findIndex(i => i === selectedOption);
